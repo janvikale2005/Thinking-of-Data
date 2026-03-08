@@ -1,18 +1,29 @@
-# Data Thinking - List Operations (Jupyter Notebook)
+# Data Thinking - Feedback Analysis & Product Recommendations
 
-This repository contains a Jupyter Notebook that demonstrates basic Python list operations used in data thinking.
+This repository contains a **Jupyter Notebook** that demonstrates basic data thinking and analysis using raw JSON feedback data from a shopping application.
+
+---
 
 ## File Included
-list_operations.ipynb – This notebook explains:
-- List creation
-- Finding size of a list
-- Understanding list shape
-- Identifying list dimensions (1D / 2D)
-- Basic list operations like accessing, adding, and removing elements.
+**data_thinking.ipynb** – This notebook includes:
 
-## Objective
-To understand how lists work in Python and how different properties such as size, shape, and dimensions are used in data analysis.
+1. **Loading Raw JSON Data**  
+   - Feedback data from a shopping app with user name, rating, and comment.
 
-## Technology Used
-- Python
-- Jupyter Notebook
+2. **Data Cleaning**  
+   - Removing missing or unwanted values to make data ready for analysis.
+
+3. **List Operations**  
+   - List creation, accessing elements, size calculation, understanding shape, and identifying dimensions (1D / 2D).
+
+4. **Insights Function** (`get_insights(data)`)  
+   - Calculates **average product rating**  
+   - Calculates **percentage of users with poor rating (<3)**
+
+5. **Product Recommendation Function** (`get_recommendations(data)`)  
+   - Suggests **Apple** if user rating ≥ 4  
+   - Suggests **Samsung** if user rating < 4  
+   - Returns a list of recommendations for all users
+
+---
+
